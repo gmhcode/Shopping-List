@@ -7,21 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		90E1BAED21BAF99500948811 /* TheList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 90E1BAEB21BAF99500948811 /* TheList.xcdatamodeld */; };
+		90E1BAEF21BAF9C500948811 /* TheList+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E1BAEE21BAF9C500948811 /* TheList+Convenience.swift */; };
 		90ECF01821BAD20500FE7E6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ECF01721BAD20500FE7E6A /* AppDelegate.swift */; };
-		90ECF01A21BAD20500FE7E6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ECF01921BAD20500FE7E6A /* ViewController.swift */; };
 		90ECF01D21BAD20500FE7E6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90ECF01B21BAD20500FE7E6A /* Main.storyboard */; };
 		90ECF01F21BAD20700FE7E6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90ECF01E21BAD20700FE7E6A /* Assets.xcassets */; };
 		90ECF02221BAD20700FE7E6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90ECF02021BAD20700FE7E6A /* LaunchScreen.storyboard */; };
+		90ECF02F21BAD2DE00FE7E6A /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ECF02E21BAD2DE00FE7E6A /* ListTableViewCell.swift */; };
+		90ECF03721BAD3D700FE7E6A /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ECF03621BAD3D700FE7E6A /* ListTableViewController.swift */; };
+		90ECF03B21BAD47400FE7E6A /* CoredataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ECF03A21BAD47400FE7E6A /* CoredataStack.swift */; };
+		90ECF03D21BAD72C00FE7E6A /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90ECF03C21BAD72C00FE7E6A /* ListController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		90ECF01421BAD20500FE7E6A /* Shopping List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shopping List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		90E1BAEC21BAF99500948811 /* TheList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TheList.xcdatamodel; sourceTree = "<group>"; };
+		90E1BAEE21BAF9C500948811 /* TheList+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TheList+Convenience.swift"; sourceTree = "<group>"; };
+		90ECF01421BAD20500FE7E6A /* List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = List.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90ECF01721BAD20500FE7E6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		90ECF01921BAD20500FE7E6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		90ECF01C21BAD20500FE7E6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		90ECF01E21BAD20700FE7E6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90ECF02121BAD20700FE7E6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		90ECF02321BAD20700FE7E6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90ECF02E21BAD2DE00FE7E6A /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		90ECF03621BAD3D700FE7E6A /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		90ECF03A21BAD47400FE7E6A /* CoredataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoredataStack.swift; sourceTree = "<group>"; };
+		90ECF03C21BAD72C00FE7E6A /* ListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +56,7 @@
 		90ECF01521BAD20500FE7E6A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				90ECF01421BAD20500FE7E6A /* Shopping List.app */,
+				90ECF01421BAD20500FE7E6A /* List.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,8 +64,10 @@
 		90ECF01621BAD20500FE7E6A /* Shopping List */ = {
 			isa = PBXGroup;
 			children = (
+				90ECF02B21BAD25C00FE7E6A /* Model */,
+				90ECF02A21BAD25A00FE7E6A /* Controller */,
+				90ECF02921BAD25400FE7E6A /* View */,
 				90ECF01721BAD20500FE7E6A /* AppDelegate.swift */,
-				90ECF01921BAD20500FE7E6A /* ViewController.swift */,
 				90ECF01B21BAD20500FE7E6A /* Main.storyboard */,
 				90ECF01E21BAD20700FE7E6A /* Assets.xcassets */,
 				90ECF02021BAD20700FE7E6A /* LaunchScreen.storyboard */,
@@ -64,12 +76,55 @@
 			path = "Shopping List";
 			sourceTree = "<group>";
 		};
+		90ECF02921BAD25400FE7E6A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				90ECF02E21BAD2DE00FE7E6A /* ListTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		90ECF02A21BAD25A00FE7E6A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				90ECF02D21BAD26600FE7E6A /* ModelController */,
+				90ECF02C21BAD25F00FE7E6A /* ViewController */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		90ECF02B21BAD25C00FE7E6A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				90ECF03A21BAD47400FE7E6A /* CoredataStack.swift */,
+				90E1BAEB21BAF99500948811 /* TheList.xcdatamodeld */,
+				90E1BAEE21BAF9C500948811 /* TheList+Convenience.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		90ECF02C21BAD25F00FE7E6A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				90ECF03621BAD3D700FE7E6A /* ListTableViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		90ECF02D21BAD26600FE7E6A /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+				90ECF03C21BAD72C00FE7E6A /* ListController.swift */,
+			);
+			name = ModelController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		90ECF01321BAD20500FE7E6A /* Shopping List */ = {
+		90ECF01321BAD20500FE7E6A /* List */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 90ECF02621BAD20700FE7E6A /* Build configuration list for PBXNativeTarget "Shopping List" */;
+			buildConfigurationList = 90ECF02621BAD20700FE7E6A /* Build configuration list for PBXNativeTarget "List" */;
 			buildPhases = (
 				90ECF01021BAD20500FE7E6A /* Sources */,
 				90ECF01121BAD20500FE7E6A /* Frameworks */,
@@ -79,9 +134,9 @@
 			);
 			dependencies = (
 			);
-			name = "Shopping List";
+			name = List;
 			productName = "Shopping List";
-			productReference = 90ECF01421BAD20500FE7E6A /* Shopping List.app */;
+			productReference = 90ECF01421BAD20500FE7E6A /* List.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -99,7 +154,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 90ECF00F21BAD20500FE7E6A /* Build configuration list for PBXProject "Shopping List" */;
+			buildConfigurationList = 90ECF00F21BAD20500FE7E6A /* Build configuration list for PBXProject "List" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -112,7 +167,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				90ECF01321BAD20500FE7E6A /* Shopping List */,
+				90ECF01321BAD20500FE7E6A /* List */,
 			);
 		};
 /* End PBXProject section */
@@ -135,8 +190,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90ECF01A21BAD20500FE7E6A /* ViewController.swift in Sources */,
+				90ECF03D21BAD72C00FE7E6A /* ListController.swift in Sources */,
+				90E1BAEF21BAF9C500948811 /* TheList+Convenience.swift in Sources */,
 				90ECF01821BAD20500FE7E6A /* AppDelegate.swift in Sources */,
+				90ECF02F21BAD2DE00FE7E6A /* ListTableViewCell.swift in Sources */,
+				90ECF03721BAD3D700FE7E6A /* ListTableViewController.swift in Sources */,
+				90ECF03B21BAD47400FE7E6A /* CoredataStack.swift in Sources */,
+				90E1BAED21BAF99500948811 /* TheList.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +349,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.greghughes.Shopping-List";
+				PRODUCT_BUNDLE_IDENTIFIER = com.greghughes.List;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -307,7 +367,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.greghughes.Shopping-List";
+				PRODUCT_BUNDLE_IDENTIFIER = com.greghughes.List;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -317,7 +377,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		90ECF00F21BAD20500FE7E6A /* Build configuration list for PBXProject "Shopping List" */ = {
+		90ECF00F21BAD20500FE7E6A /* Build configuration list for PBXProject "List" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				90ECF02421BAD20700FE7E6A /* Debug */,
@@ -326,7 +386,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		90ECF02621BAD20700FE7E6A /* Build configuration list for PBXNativeTarget "Shopping List" */ = {
+		90ECF02621BAD20700FE7E6A /* Build configuration list for PBXNativeTarget "List" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				90ECF02721BAD20700FE7E6A /* Debug */,
@@ -336,6 +396,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		90E1BAEB21BAF99500948811 /* TheList.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				90E1BAEC21BAF99500948811 /* TheList.xcdatamodel */,
+			);
+			currentVersion = 90E1BAEC21BAF99500948811 /* TheList.xcdatamodel */;
+			path = TheList.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 90ECF00C21BAD20500FE7E6A /* Project object */;
 }
